@@ -235,7 +235,7 @@ defaults:
       path: ""
       type: research
     values:
-      layout: default
+      layout: compress
       author_profile: true
       share: true
       comment: true    
