@@ -5,6 +5,6 @@ permalink: /publication/tensor_decomposition_for_ control_of_many_systems_with_r
 date: 2017-05-30
 venue: 'IEEE American Control Conference'
 paperurl: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7963128&tag=1'
-lnk: 'https://ieeexplore.ieee.org/document/7963128'
+link: 'https://ieeexplore.ieee.org/document/7963128'
 citation: 'Q. Huang (B. Wingo) and R. C. Winck &quot;Tensor Decomposition for Control of Many Systems with Reduced Inputs.&quot; <i>IEEE American Control Conference</i> May, 2017.'
 ---
