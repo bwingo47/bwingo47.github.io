@@ -1,4 +1,5 @@
 ---
+{% include archive-single.html %}
 title: "Momentum-Aware Planning Synthesis for Dynamic Legged Locomotion"
 collection: publications
 permalink: /pub_summary/2021-3-momentum-aware-summary
