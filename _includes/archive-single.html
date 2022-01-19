@@ -71,8 +71,8 @@
       {% if post.github %}
         <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
       {% endif %}
-      {% if post.excerpt %}
-        <a href="{{ post.excerpt }}"><i class="fab fa-fw fa-book zoom" aria-hidden="true"></i></a>
+      {% if post.summary %}
+        <a href="{{ post.summary }}"><i class="fab fa-fw fa-book zoom" aria-hidden="true"></i></a>
       {% endif %}
       </p>
     {% elsif post.collection == 'posts' and post.date %}
