@@ -6,7 +6,7 @@ paperurl: 'https://static1.squarespace.com/static/6005cfec3753c24df2490e0a/t/60e
 link: '/images/Dynamic Walking 2021 Momentum-Aware Planning Synthesis for Dynamic Legged Locomotion.pdf'
 citation: 'Z. Zhou, <b>B. Wingo (Q. Huang)</b>, N. Boyd, S. Hutchinson, and Y. Zhao, &quot;Momentum-Aware Planning Synthesis for Dynamic Legged Locomotion.&quot; <i>Proceedings of Dynamic Walking</i>, July, 2021.'
 ---
-
+<!-- 
 Dynamic motion generation for legged robots remains challenging due to the non-cyclic contact and highly nonlinear rigid body dynamics. Trajectory optimization (TO) with
 embedded contact dynamics generates elegant motions, yet
 solving the associated nonlinear program (NLP) is still computationally intractable. A Hierarchical gait→centroidal→wholebody pipeline is commonly employed to reduce the planning
@@ -22,4 +22,4 @@ optimization capable of discovering both contact sequences
 and angular momentum trajectories. A new set of consensus
 constraints is also formulated. Lastly, we evaluate different
 acceleration techniques to improve the global convergence of
-the proposed distributed optimization.
+the proposed distributed optimization. -->
