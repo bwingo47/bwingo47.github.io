@@ -1,3 +1,4 @@
+{% include archive-single.html %}
 ---
 title: "Momentum-Aware Planning Synthesis for Dynamic Legged Locomotion"
 collection: abs
