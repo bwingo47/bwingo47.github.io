@@ -6,5 +6,6 @@ date: 2021-04-30
 venue: 'IEEE Conference on Automation Science and Engineering (CASE)'
 paperurl: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9551489'
 link: 'https://ieeexplore.ieee.org/document/9551489'
+code: '/pub_summary/distributed_multi_abs.png'
 citation: 'M. Murtaza, <b>B. Wingo (Q. Huang)</b>, D. Kilanga, and S. Hutchinson, &quot;Distributed Optimal Control Framework based on Coordinate Descent Optimization for Multi-Agent Robots.&quot; <i>IEEE Conference on Automation Science and Engineering (CASE)</i>, April, 2021.'
 ---
