@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a Robotics Ph.D. student in the [Institute for Robotics and Intelligent Machines](https://research.gatech.edu/robotics) and [George Woodruff School of Mechanical Engineering](https://www.me.gatech.edu/) at [Georgia Institute of Technology](https://www.gatech.edu/). I am working under the suppervision of [Dr. Seth Hutchinson](https://faculty.cc.gatech.edu/~seth/). Before joining Georgia Tech, I earned my B.S. in Mechanical Engineering from [Rose-Hulman Institute of Technology](https://www.rose-hulman.edu/). 
+Welcome! I am a Robotics Ph.D. student in the [Institute for Robotics and Intelligent Machines](https://research.gatech.edu/robotics) and [George Woodruff School of Mechanical Engineering](https://www.me.gatech.edu/) at [Georgia Institute of Technology](https://www.gatech.edu/). I am working under the supervision of [Dr. Seth Hutchinson](https://faculty.cc.gatech.edu/~seth/). Before joining Georgia Tech, I earned my B.S. in Mechanical Engineering from [Rose-Hulman Institute of Technology](https://www.rose-hulman.edu/). 
 
-My research is built on optimization and control theories. My current focus concerns the efficiency and robustness of trajectory generation and control for legged systems to achieve agile and dynamic motion. Common topics deployed in my research include: direct collocation, differential dynamic programming (DDP), distrbuted optimization (ADMM), model predictive control (MPC), hierarchical whole-body control, control-Lyapunov functions, and operational space control. I hope to apply my proficiency in optimization, dynamics and control to enable robotics systems to maneuver in the real world.
+My research is built on optimization and control theories. My current focus concerns the efficiency and robustness of trajectory generation and control for legged systems to achieve agile and dynamic motion. Common topics deployed in my research include: direct collocation, differential dynamic programming (DDP), distributed optimization (ADMM), model predictive control (MPC), hierarchical whole-body control, control-Lyapunov functions, and operational space control. I hope to apply my proficiency in optimization, dynamics and control to enable robotics systems to maneuver in the real world.
 
 <!-- Getting started
 ======
