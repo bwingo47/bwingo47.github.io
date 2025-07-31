@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
 name                     : &name "Bruce Wingo"
-description              : &description "Ph.D. student at Georgia Tech"
+description              : &description "Ph.D. Candidate at Georgia Tech"
 url                      : https://bwingo47.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bwingo47/bwingo47.github.io"
@@ -83,7 +83,7 @@ author:
   name             : "Bruce Wingo"
   avatar           : "profile.jpeg"
   bio              : "Robotics Ph.D. student at Georgia Tech"
-  location         : "Atlanta, GA"
+  location         : "Paris, France"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=a2jB6z0AAAAJ"

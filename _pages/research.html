@@ -5,52 +5,69 @@ author_profile: true
 ---
 
 <h2>
-    Agile Quadruped Jumping Through Full Centroidal Momentum Model Predictive Control
+    Low-Complexity Constraint Differential Inverse Kinematics
 </h2>
 <p>
-    Current progress on controlling quadruped robots through dynamic jumping and running 
-    motions. I designed a convex MPC controller utilizing full centroidal dynamics and 
-    centroidal momentum matrix. The designed controller is able to regenerate reference
-    trajectory in real time, and robust enough to be directly deployed on hardware without 
-    low-level whole-body controller. Preliminary result for continuous 90 degrees jump 
-    turn is shown here on the MIT mini-cheetah platform. This work is accepted to appear 
-    in IEEE Robotics and Automation Letters (RA-L) later this year. Pre-print
-    can be found <a href="https://arxiv.org/abs/2203.01548">here</a>.    
+		I introduced a novel constrained differential inverse kinematics solver that reframes 
+		the problem from an Augmented Lagrangian perspective. The resulting solver, <strong>LoIK</strong>, 
+		achieves linear-time complexity in both the total degrees-of-freedom of the robot, and the number of 
+		constraints in the problem. The low time-complexity makes it suitable for real-time control and planning of 
+		complex systems like humanoid robots with multiple equality/inequality constraints.
+		As shown in the benchmarks, <strong>LoIK</strong> consistently outperforms the state-of-the-art, 
+		general-purpose quadratic programming solvers. This work was published in 
+		Robotics: Science and Systems (RSS) 2024. Pre-print available <a href="https://hal.science/hal-04607809">here</a>.  
+		The open-source solver is available on <a href="https://github.com/Simple-Robotics/LoIK" target="_blank" rel="noopener noreferrer">GitHub</a>.  
+    <br/>
+    <br/><img src="../images/project_videos/loik-timing-benchmarks.png">
+    <br/>
+</p>
+
+<h2>
+    Agile Quadruped Jumping Through Full-Centroidal-Momentum Model Predictive Control
+</h2>
+<p>
+    I designed a real-time convex model predictive controller (MPC) for dynamic quadruped jumping,
+		utilizing the full-centroidal-dynamics model, via the centroidal-momentum matrix.
+    The designed controller is capable of correcting reference
+    trajectory in real time, and is robust enough to be directly deployed on hardware without any additional
+    low-level whole-body controllers. Hardware experiments for continuous 90-degree jump-turns 
+		are conducted on the MIT mini-cheetah platform. This work is published at the
+		IEEE Robotics and Automation Letters (RA-L). Pre-print
+    available <a href="https://arxiv.org/abs/2203.01548">here</a>.    
     <br/>
     <br/><img src="../images/project_videos/90-deg-continuous-jump-turn.gif">
     <br/>
-</P>
+</p>
 
 
 <h2>
     Momentum-Aware Planning Synthesis for Dynamic Legged Locomotion
 </h2>
 <p>
-    In this project, we developed a bi-level trajectory optimization framework
-    for generating dynamic and agile motion for quadruped robots. Our framework 
+    I developed a bi-level trajectory optimization framework
+    for generating dynamic and agile motion for quadruped robots. The proposed framework 
     consists of two optimization components: a centroidal optimization using 
-    reduced order centroidal dynamics with momentum as decision variables; and 
-    a DDP-based full dynamics optimization. Additional consensus constraints are 
-    enforced to bridge the two components. Here are sample trajectories, for 
-    quadruped A1, generated using developed framework. A journal extension of this 
-    project is currently in progress.  
+    reduced order centroidal dynamics with linear and angular momentum as decision variables; and 
+    a whole-body-dynamics-based differential-dynamic-programming optimization. Consensus constraints are 
+    enforced to drive convergence between the two components. Below are sample trajectories generated using 
+		the proposed framework for the quadruped A1, to perform high-speed trotting, zero-gravity body re-orientation, and jump-turns.
 
     <img src="../images/project_videos/momentum-aware-canter.gif">
     <img src="../images/project_videos/momentum-aware-zero-g-jump-turn.gif">
     <br/>
-</P>
+</p>
 
 
 <h2>
-    Extending Riemmanian Motion Policies to Underactuated Wheeled-Inverted-Pendulum Robots 
+    Extending Riemannian Motion Policies to Underactuated Wheeled-Inverted-Pendulum Robots 
 </h2>
 <p>
-    For this project, we developed a reactive motion planning pipeline for wheeled-inverted-pendulum
-    based humanoids. We proposed a dynamics decomposition technique that splits the full dynamics
+    For this project, I developed a reactive policy motion planning pipeline for wheeled-inverted-pendulum
+    based humanoids. A dynamics decomposition technique is proposed to split the full dynamics
     of the robot into fully actuated and underactuated subsystems. Leveraging Riemannian
-    motion policies, differential dynamic programming, we were able to 
+    motion policies and differential-dynamic-programming, one can
     independently plan trajectories for fully actuated and underactuated dynamics, which are then 
-    combined into a single motion plan through null-space projection. This work is published at 
+    combined into a single motion plan through null-space projection. This work is published at
     <a href="https://ieeexplore.ieee.org/document/9196866">ICRA 2020</a>
  
     <img src="../images/project_videos/rmp-underactuated.gif">
@@ -62,31 +79,29 @@ author_profile: true
     Adaptively Robust Control Policy Synthesis Through Riemannian Motion Policies 
 </h2>
 <p>
-    In this project, we proposed a robust control Lyapunov function based tracking 
-    controller, capable of handling large magnitude of dynamics uncertainties 
-    and external disturbances. Additionally, we devised an automatic robust gain 
-    adaptation procedure that guarantees the stability and boundedness of the 
-    proposed controller. Experimental result on KUKA iiwa platform is shown here, 
-    for object tracking and obstacle avoidance. This work is published at 
-    the May issue of 
+    In this project, I proposed a robust control-Lyapunov-function (CLF)-based tracking 
+    controller, capable of handling large magnitudes of dynamic uncertainty 
+    and external disturbances. Additionally, I devised an automatic robust gain 
+    scheduling procedure that guarantees the stability and boundedness of the 
+    proposed controller. Experimental result on the KUKA iiwa manipulator platform is demonstrated below, 
+    for object tracking and obstacle avoidance tasks. This work is published at 
     <a href="https://ieeexplore.ieee.org/document/9308931">Control Systems Letters 2021</a>
 
     <img src="../images/project_videos/adaptively-robust-rmp.gif">
     <br/>
-</P>
+</p>
 
 
 <h2>
     Distributed Optimal Control Framework based on Coordinate Descent Optimization for Multi-Agent Robots 
 </h2>
 <p>
-    In this paper, we present a distributed optimal
+    In this paper, I helped develop a distributed optimal
     control framework for a multi-agent robotics system based
-    on coordinate descent optimization. Our framework exploits
+    on coordinate-descent optimization. The proposed framework exploits
     the underlying graph topology to compute the optimal control
-    trajectory in a distributed manner. To show the efficacy
-    of the framework, we apply it to a problem where a team
-    of robots is tasked with establishing a communication link
+    trajectory in a distributed manner. The proposed algorithm is then tested 
+		on a problem where a team of robots is tasked with establishing a communication link
     between source and destination while minimizing the overall
     system mobility and communication energy cost. Here is a sample
     of our algorithm running on the Gatech Robotarium platform using 
@@ -95,4 +110,4 @@ author_profile: true
 
     <img src="../images/project_videos/distributed-oc-multi-agent.gif">
     <br/>
-</P>
+</p>
